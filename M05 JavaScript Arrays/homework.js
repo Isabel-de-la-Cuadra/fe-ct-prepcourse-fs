@@ -228,7 +228,12 @@ function breakStatement(num) {
             break;
         }
     }
-    return arr;
+    if (arr.length === 10) {
+        return arr;
+    } else {
+        return "Se interrumpió la ejecución";
+    }
+
 }
 
 function continueStatement(num) {
