@@ -223,8 +223,9 @@ function breakStatement(num) {
     for (let i = 0; i < 10; i++) {
         num += 2;
         arr.push(num);
-        if (num === i * 2) {
-            return "Se interrumpió la ejecución";
+
+        if (num === i) {
+            break;
         }
     }
     return arr;
